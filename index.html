@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Cypher1305</title>
+    <meta name="description" content="Personal portfolio built with a Windows 98 retro aesthetic." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="desktop">
+      <div class="desktop-icons">
+
+        <div class="icon" onclick="openWindow('win-about')">
+          <div class="icon-img">
+            <img
+              src="assets/icons/icons8-collaborator-female-skin-type-5-96.png"
+              alt="Profile"
+            />
+          </div>
+          <span class="t" data-fr="profil" data-en="profile"> profile </span>
+        </div>
+
+        <div class="icon" onclick="openWindow('win-skills')">
+          <div class="icon-img">
+            <img
+              src="assets/icons/icons8-gear-100.png"
+              alt="Skills"
+              width="60"
+              height="60"
+            />
+          </div>
+          <span class="t" data-fr="compétences" data-en="skills">
+            skills
+          </span>
+        </div>
+
+        <div class="icon" onclick="openWindow('win-projects')">
+          <div class="icon-img">
+            <img
+              src="assets/icons/icons8-folder-100.png"
+              alt="Projects"
+              width="60"
+              height="60"
+            />
+          </div>
+          <span class="t" data-fr="projets" data-en="projects">projects</span>
+        </div>
+        
+        <div class="icon" onclick="openWindow('win-es')">
+          <div class="icon-img">
+            <img
+              src="assets/icons/es_ink-02.jpg"
+              alt="ES_"
+              width="60"
+              height="60"
+            />
+          </div>
+          <span class="t" data-fr="es_" data-en="es_">es_</span>
+        </div>
+        <a class="icon" href="https://mail.google.com/mail/?view=cm&fs=1&to=k.yao1305@gmail.com&su=Business Inquiry&body=Hello Cypher1305," target="_blank">
+          <div class="icon-img">
+            <img
+              src="assets/icons/icons8-gmail-100.png"
+              alt="Contact"
+              width="60"
+              height="60"
+            />
+          </div>
+          <span class="t" data-fr="mail.me" data-en="mail.me">mail.me</span>
+        </a>
+      </div>
+
+      <!-- ABOUT -->
+      <div class="window active" id="win-about">
+        <div class="titlebar" onmousedown="dragStart(event, 'win-about')">
+          <div class="titlebar-left">
+            <img
+              src="assets/icons/icons8-collaborator-female-skin-type-5-96.png"
+              alt="Profile"
+              width="20"
+              height="20"
+              style="vertical-align: middle; margin-right: 6px"
+            />
+            <span
+              class="t"
+              data-fr="C:\CYPHER1305\profil.exe"
+              data-en="C:\CYPHER1305\profile.exe"
+              >C:\CYPHER1305\profile.exe</span
+            >
+          </div>
+          <div class="win-buttons">
+            <div class="win-btn" onclick="minimizeWindow('win-about')">_</div>
+            <div class="win-btn" onclick="maximizeWindow('win-about')">□</div>
+            <div class="win-btn" onclick="closeWindow('win-about')">✕</div>
+          </div>
+        </div>
+        <div class="menubar">
+          <span class="t" data-fr="Fichier" data-en="File">File</span>
+          <span class="t" data-fr="Édition" data-en="Edit">Edit</span>
+          <span class="t" data-fr="Affichage" data-en="View">View</span>
+          <span class="t" data-fr="Aide" data-en="Help">Help</span>
+        </div>
+        <div class="win-content">
+          <div class="profile-section">
+            <img
+              src="assets/images/profile-pic.jpeg"
+              alt="Bénédicte YAO"
+              class="profile-pic"
+              width="190"
+              height="180"
+              object-fit="cover"
+            />
+            <div class="profile-text">
+              <h2>BENEDICTE YAO</h2>
+              <div
+                class="role t"
+                data-fr="> Cypher1305 - Dev Full Stack & Fondatrice"
+                data-en="> Cypher1305 - Full Stack Developer & Founder"
+              >
+                > Bénédicte YAO - Full Stack Developer & Founder
+              </div>
+              <p
+                class="t"
+                data-fr="Juste une fille transformant des idées en impact.<br>Construire des solutions pour de vrais problèmes africains."
+                data-en="Just a girl turning ideas into impact.<br>Building solutions for real African problems."
+              >
+                Just a girl turning ideas into impact.<br>Building solutions for real African problems.
+              </p>
+            </div>
+          </div>
+          <hr class="divider" />
+          <div class="info-row">
+            <span class="info-label t" data-fr="LIEU:" data-en="LOCATION:"
+              >LOCATION:</span
+            ><span>Abidjan, Côte d'Ivoire</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label t" data-fr="STATUT:" data-en="STATUS:"
+              >STATUS:</span
+            ><span
+              class="t"
+              data-fr="Entrepreneure & Freelance"
+              data-en="Entrepreneur & Freelance"
+              >Entrepreneur & Freelance</span
+            >
+          </div>
+          <div class="info-row">
+            <span class="info-label">EXP:</span
+            ><span
+              class="t"
+              data-fr="3 ans de freelance, 16 mois d'expérience professionnelle"
+              data-en="3 years freelance work, 16 months professional experience"
+              >3 years freelance work, 16 months professional experience</span
+            >
+          </div>
+          <div class="info-row">
+            <span class="info-label t" data-fr="LANGUES:" data-en="LANG:"
+              >LANG:</span
+            ><span
+              class="t"
+              data-fr="Français (natif) | Anglais (B1)"
+              data-en="French (native) | English (B1)"
+              >French (native) | English (B1)</span
+            >
+          </div>
+          <div class="info-row">
+            <span class="info-label">EMAIL:</span
+            ><span>k.yao1305@gmail.com</span>
+          </div>
+          <hr class="divider" />
+          <div
+            style="font-size: 11px; color: var(--win-dark)"
+            class="t"
+            data-fr="> Evolve Smarter_<br />> &quot;Technology is moving fast. Africa cannot afford confusion.&quot;"
+            data-en="> Evolve Smarter_<br />> &quot;Technology is moving fast. Africa cannot afford confusion.&quot;"
+          >
+            > Just a girl turning ideas into impact_
+          </div>
+        </div>
+      </div>
+
+       
+
+      <!-- PROJECTS -->
+      <div class="window" id="win-projects">
+        <div class="titlebar" onmousedown="dragStart(event, 'win-projects')">
+          <div class="titlebar-left">
+            <img
+              src="assets/icons/icons8-folder-100.png"
+              alt="Projects"
+              width="20"
+              height="20"
+              style="vertical-align: middle; margin-right: 6px"
+            />
+            <span
+              class="t"
+              data-fr="C:\CYPHER\projets"
+              data-en="C:\CYPHER\projects"
+              >C:\CYPHER\projects</span
+            >
+          </div>
+          <div class="win-buttons">
+            <div class="win-btn" onclick="minimizeWindow('win-projects')">_</div>
+            <div class="win-btn" onclick="maximizeWindow('win-projects')">□</div>
+            <div class="win-btn" onclick="closeWindow('win-projects')">✕</div>
+          </div>
+        </div>
+        <div class="menubar">
+          <span class="t" data-fr="Fichier" data-en="File">File</span>
+          <span class="t" data-fr="Édition" data-en="Edit">Edit</span>
+          <span class="t" data-fr="Affichage" data-en="View">View</span>
+          <span class="t" data-fr="Aide" data-en="Help">Help</span>
+        </div>
+        <div class="win-content">
+          <div class="project-card">
+            <h3>DORA</h3>
+            <span
+              class="badge t"
+              data-fr="🏆 3ème / 20+ projets — ATOS Digital Academy"
+              data-en="🏆 3rd / 20+ projects — ATOS Digital Academy"
+              >🏆 3rd / 20+ projects — ATOS Digital Academy</span
+            >
+            <p
+              style="margin-top: 8px"
+              class="t"
+              data-fr="Plateforme multimodale de détection et vérification des fausses informations. Conçue pour alerter les populations et autorités en temps réel."
+              data-en="Multimodal platform for detecting and verifying online misinformation. Built to alert populations and authorities in real time."
+            >
+              Multimodal platform for detecting and verifying online
+              misinformation. Built to alert populations and authorities in real
+              time.
+            </p>
+            <div>
+              <span class="tag">Java / Spring Boot</span
+              ><span class="tag">Python</span><span class="tag">NLP</span
+              ><span class="tag">AI</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3
+              class="t"
+              data-fr="Agent IA — Live TikTok"
+              data-en="TikTok Live AI Agent"
+            >
+              TikTok Live AI Agent
+            </h3>
+            <p
+              class="t"
+              data-fr="Agent IA automatisant la gestion des commandes, la vérification des paiements mobile money et la planification des livraisons pour les vendeurs en live TikTok."
+              data-en="AI agent automating order management, mobile money payment verification and delivery planning for TikTok live sellers."
+            >
+              AI agent automating order management, mobile money payment
+              verification and delivery planning for TikTok live sellers.
+            </p>
+            <div>
+              <span class="tag">AI Agent</span
+              ><span class="tag">Automation</span
+              ><span class="tag">Mobile Money</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>ES_ — Evolve Smarter</h3>
+            <p
+              class="t"
+              data-fr="Communauté tech dédiée à rendre la technologie compréhensible et accessible en Afrique. Contenu, formations, ateliers et programmes terrain."
+              data-en="Tech community dedicated to making technology understandable and accessible across Africa. Content, training, workshops and real-world programs."
+            >
+              Tech community dedicated to making technology understandable and
+              accessible across Africa.
+            </p>
+            <div>
+              <span class="tag">Community</span><span class="tag">EdTech</span
+              ><span class="tag">Africa</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>MonEtab + ADABank</h3>
+            <p
+              class="t"
+              data-fr="Plateforme de gestion scolaire & fintech de comparaison bancaire. Développées lors du stage chez Atos (Bull)."
+              data-en="School management platform & fintech banking comparison. Built during internship at Atos (Bull)."
+            >
+              School management platform & fintech banking comparison. Built
+              during internship at Atos (Bull).
+            </p>
+            <div>
+              <span class="tag">Java</span><span class="tag">Spring Boot</span
+              ><span class="tag">Angular</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="window" id="win-skills">
+        <div class="titlebar" onmousedown="dragStart(event, 'win-skills')">
+          <div class="titlebar-left">
+            <span>⚙️</span>
+            <span
+              class="t"
+              data-fr="C:\CYPHER\compétences.sys"
+              data-en="C:\CYPHER\skills.sys"
+              >C:\CYPHER\skills.sys</span
+            >
+          </div>
+          <div class="win-buttons">
+            <div class="win-btn" onclick="minimizeWindow('win-skills')">_</div>
+            <div class="win-btn" onclick="maximizeWindow('win-skills')">□</div>
+            <div class="win-btn" onclick="closeWindow('win-skills')">✕</div>
+          </div>
+        </div>
+        <div class="menubar">
+          <span class="t" data-fr="Fichier" data-en="File">File</span>
+          <span class="t" data-fr="Édition" data-en="Edit">Edit</span>
+          <span class="t" data-fr="Affichage" data-en="View">View</span>
+          <span class="t" data-fr="Aide" data-en="Help">Help</span>
+        </div>
+        <div class="win-content">
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h4>// FRONTEND</h4>
+              <div class="skill-item">React / React Native</div>
+              <div class="skill-item">Vue.js / Angular</div>
+              <div class="skill-item">Tailwind / Bootstrap</div>
+              <div class="skill-item">Figma</div>
+            </div>
+            <div class="skill-group">
+              <h4>// BACKEND</h4>
+              <div class="skill-item">Java / Spring Boot</div>
+              <div class="skill-item">Node.js</div>
+              <div class="skill-item">PHP / Laravel</div>
+              <div class="skill-item">Python</div>
+            </div>
+            <div class="skill-group">
+              <h4 class="t" data-fr="// DATA & IA" data-en="// DATA & AI">
+                // DATA & AI
+              </h4>
+              <div class="skill-item">RAG / NLP / OCR</div>
+              <div class="skill-item">Power BI</div>
+              <div class="skill-item">MySQL / PostgreSQL</div>
+              <div class="skill-item">MongoDB</div>
+            </div>
+            <div class="skill-group">
+              <h4>// DEVOPS</h4>
+              <div class="skill-item">Docker / Kubernetes</div>
+              <div class="skill-item">CI/CD GitLab/Jenkins</div>
+              <div class="skill-item">ArgoCD</div>
+              <div class="skill-item">RPA</div>
+            </div>
+          </div>
+          <hr class="divider" />
+          <div style="font-size: 11px">
+            <div class="skill-row">
+              <div class="skill-name">
+                <span>Java / Spring Boot</span><span>90%</span>
+              </div>
+              <div class="progress-wrap">
+                <div class="progress-fill" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-name">
+                <span>React / Frontend</span><span>85%</span>
+              </div>
+              <div class="progress-wrap">
+                <div class="progress-fill" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-name">
+                <span>DevOps / Docker</span><span>75%</span>
+              </div>
+              <div class="progress-wrap">
+                <div class="progress-fill" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-name">
+                <span class="t" data-fr="IA / Data" data-en="AI / Data"
+                  >AI / Data</span
+                ><span>70%</span>
+              </div>
+              <div class="progress-wrap">
+                <div class="progress-fill" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ES_ -->
+      <div class="window" id="win-es">
+        <div class="titlebar" onmousedown="dragStart(event, 'win-es')">
+          <div class="titlebar-left">
+            <span>🌐</span><span>C:\CYPHER\ES_.init</span>
+          </div>
+          <div class="win-buttons">
+            <div class="win-btn" onclick="minimizeWindow('win-es')">_</div>
+            <div class="win-btn" onclick="maximizeWindow('win-es')">□</div>
+            <div class="win-btn" onclick="closeWindow('win-es')">✕</div>
+          </div>
+        </div>
+        <div class="menubar">
+          <span class="t" data-fr="Fichier" data-en="File">File</span>
+          <span class="t" data-fr="Édition" data-en="Edit">Edit</span>
+          <span class="t" data-fr="Affichage" data-en="View">View</span>
+          <span class="t" data-fr="Aide" data-en="Help">Help</span>
+        </div>
+        <div class="win-content">
+          <div class="es-header">&gt; ES_ — EVOLVE SMARTER_</div>
+          <div class="es-card">
+            <h4>// MISSION</h4>
+            <span
+              class="t"
+              data-fr="La tech avance vite. L'Afrique ne peut pas se permettre la confusion.<br>ES_ rend la tech compréhensible, utile et accessible."
+              data-en="Technology is moving fast. Africa cannot afford confusion.<br>ES_ makes tech understandable, useful and accessible."
+              >Technology is moving fast. Africa cannot afford confusion.<br />ES_
+              makes tech understandable, useful and accessible.</span
+            >
+          </div>
+          <div class="es-card">
+            <h4>// PROGRAMS</h4>
+            <span class="tag">Tech Sprint</span
+            ><span class="tag">Tech Horizon</span
+            ><span class="tag">Make It Real</span
+            ><span class="tag">Level Up</span
+            ><span class="tag">Hello Tech!</span>
+          </div>
+          <div class="es-card">
+            <h4 class="t" data-fr="// FONDATRICE" data-en="// FOUNDER">
+              // FOUNDER
+            </h4>
+            <span
+              class="t"
+              data-fr="Bénédicte YAO — Fondatrice & Team Lead"
+              data-en="Bénédicte YAO — Founder & Team Lead"
+              >Bénédicte YAO — Founder & Team Lead</span
+            ><br />
+            <span style="color: var(--win-dark); font-size: 11px"
+              >Comprendre. Utiliser. Questionner. Évoluer.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TASKBAR -->
+    <div class="taskbar">
+      <button class="lang-btn" onclick="toggleLang()" id="lang-btn">
+        🌐 FR
+      </button>
+      <div class="taskbar-sep"></div>
+      <button class="taskbar-btn" onclick="window.open('https://github.com/Cypher1305', '_blank')">
+        <img
+          src="assets/icons/icons8-github-100.png"
+          alt="GitHub"
+          width="24"
+          height="24"
+          style="vertical-align: middle; margin-right: 6px"
+        />
+        <span class="t" data-fr="github" data-en="github">github</span>
+      </button>
+      <button class="taskbar-btn" onclick="window.open('https://www.linkedin.com/in/benedicteyao1305/', '_blank')">
+        <img
+          src="assets/icons/icons8-linkedin-100.png"
+          alt="LinkedIn"
+          width="24"
+          height="24"
+          style="vertical-align: middle; margin-right: 6px"
+        />
+        <span class="t" data-fr="linkedin" data-en="linkedin">linkedin</span>
+      </button>
+      <button class="taskbar-btn" onclick="window.open('https://www.substack.com/@cypher_1305', '_blank')">
+        <img
+          src="assets/icons/icons8-substack-100.png"
+          alt="substack"
+          width="24"
+          height="24"
+          style="vertical-align: middle; margin-right: 6px"
+        />
+        <span class="t" data-fr="substack" data-en="substack">substack</span>
+      </button>
+      <button class="taskbar-btn" onclick="window.open('https://www.youtube.com/@cypher_1305', '_blank')">
+        <img
+          src="assets/icons/icons8-youtube-100.png"
+          alt="youtube"
+          width="24"
+          height="24"
+          style="vertical-align: middle; margin-right: 6px"
+        />
+        <span class="t" data-fr="youtube" data-en="youtube">youtube</span>
+      </button>
+      <button class="taskbar-btn" onclick="window.open('https://www.tiktok.com/@cypher_1305', '_blank')">
+        <img
+          src="assets/icons/icons8-tiktok-100.png"
+          alt="tiktok"
+          width="24"
+          height="24"
+          style="vertical-align: middle; margin-right: 6px"
+        />
+        <span class="t" data-fr="tiktok" data-en="tiktok">tiktok</span>
+      </button>
+      <button class="taskbar-btn" onclick="window.open('https://www.instagram.com/cypher_1305/', '_blank')">
+        <img
+          src="assets/icons/icons8-instagram-100.png"
+          alt="instagram"
+          width="24"
+          height="24"
+          style="vertical-align: middle; margin-right: 6px"
+        />
+        <span class="t" data-fr="instagram" data-en="instagram">instagram</span>
+      </button>
+      <button class="taskbar-btn" onclick="window.open('https://www.facebook.com/cypher1305', '_blank')">
+        <img
+          src="assets/icons/icons8-facebook-100.png"
+          alt="facebook"
+          width="24"
+          height="24"
+          style="vertical-align: middle; margin-right: 6px"
+        />
+        <span class="t" data-fr="facebook" data-en="facebook">facebook</span>
+      </button>
+      <div class="taskbar-sep"></div>
+
+      <div class="clock" id="clock">00:00</div>
+    </div>
+
+    <script src="app.js" async defer></script>
+  </body>
+</html>
