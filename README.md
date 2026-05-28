@@ -1,2 +1,12 @@
 # cypher1305.github.io
-Personal portfolio built with a Windows 98 retro aesthetic
+
+My retro Windows 98 inspired portfolio, built with the almighty web trinity: HTML, CSS, and JS.
+Written from scratch with my own two hands
+(yes, even in 2026).
+
+Okay... Okay... Copilot occasionally interfered.
+Couldn’t resist sometimes.
+
+Just a small nostalgic project inspired by the golden age of software development...
+
+<3
